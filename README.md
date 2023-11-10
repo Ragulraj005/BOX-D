@@ -9,8 +9,6 @@ Welcome to the React App with Bootstrap project! This project is built using Rea
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## About React
 [React](https://reactjs.org/) is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage the state of an application efficiently.
