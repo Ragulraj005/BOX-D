@@ -1,0 +1,33 @@
+.library {
+  padding: 20px;
+  background-color: var(--fifth);
+  transition: ease-in-out 1s;
+  transform-origin: bottom;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.library.active {
+  top: 100px;
+  height: auto;
+  overflow-y: visible;
+  opacity: 1;
+}
+
+.library h1 {
+  font-family: 'Cinzel';
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.library h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cinzel';
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #ffffff;
+}

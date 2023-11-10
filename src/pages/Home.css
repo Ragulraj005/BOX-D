@@ -1,0 +1,53 @@
+section.home .sectionTitle {
+  font-family: 'Cinzel';
+  text-transform:lowercase;
+  font-size: 21px;
+}
+
+.ViewMore {
+  font-family: 'Cinzel';
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: 0.1s;
+}
+
+.ViewMore:hover {
+  color: var(--third);
+}
+
+
+
+
+
+@media (max-width: 991px) {
+  section.home .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .ViewMore {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 767px) {
+  section.home .sectionTitle {
+    font-size: 1.2rem;
+  }
+
+  .ViewMore {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 450px) {
+  section.home .sectionTitle {
+    font-size: 1rem;
+  }
+
+  .ViewMore {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,228 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  z-index: 1000 !important;
+  background: transparent;  
+}
+.Menu {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.userItems{
+  display: inline-flex;
+  align-items: center;
+  gap:20px;
+}
+
+.userItems .icon {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 15px rgba(255, 255,255,0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.35)  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.userItems .icon .like ,
+.userItems .icon .bag {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  height: 20px;
+  width: 20px;
+  padding: 3px;
+  color: #ffffff;
+  background: var(--second);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userItems .avatar {
+  width: 150px;
+  height: 50px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 15px rgba(255, 255,255,0.1),
+  5px 5px 15px rgba(0, 0, 0, 0.35)  ;
+}
+
+.userItems .avatar img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.userItems .avatar a {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.userItems .avatar .user {
+  display: flex;
+  flex-direction: column;
+}
+.userItems .avatar .user span {
+  color: #ffffff;
+  font-size: 0.7rem;
+}
+
+.userItems .avatar .user a {
+  text-decoration: none;
+  font-size: 0.6rem;
+}
+
+
+/* Media query for screens with a maximum width of 991px */
+@media (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+
+  .Menu {
+    font-size: 1.6rem;
+  }
+
+  .userItems .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .userItems .icon .like,
+  .userItems .icon .bag {
+    height: 18px;
+    width: 18px;
+  }
+
+  .userItems .avatar {
+    width: 120px;
+    height: 40px;
+    padding: 10px 15px;
+  }
+
+  .userItems .avatar img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .userItems .avatar a {
+    font-size: 1.6rem;
+  }
+
+  .userItems .avatar .user span {
+    font-size: 0.6rem;
+  }
+
+  .userItems .avatar .user a {
+    font-size: 0.5rem;
+  }
+}
+
+/* Media query for screens with a maximum width of 767px */
+@media (max-width: 767px) {
+  header {
+    padding: 15px;
+  }
+
+  .Menu {
+    font-size: 1.4rem;
+  }
+
+  .userItems .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .userItems .icon .like,
+  .userItems .icon .bag {
+    height: 15px;
+    width: 15px;
+  }
+
+  .userItems .avatar {
+    width: 100px;
+    height: 35px;
+    padding: 10px 10px;
+  }
+
+  .userItems .avatar img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .userItems .avatar a {
+    font-size: 1.4rem;
+  }
+
+  .userItems .avatar .user span {
+    font-size: 0.5rem;
+  }
+
+  .userItems .avatar .user a {
+    font-size: 0.4rem;
+  }
+}
+
+/* Media query for screens with a maximum width of 450px */
+@media (max-width: 450px) {
+  header {
+    padding: 12px;
+  }
+
+  .Menu {
+    font-size: 1.4rem;
+  }
+
+  .userItems .icon {
+    width: 50px;
+    height: 30px;
+  }
+
+  .userItems .icon .like,
+  .userItems .icon .bag {
+    height: 20px;
+    width: 20px;
+  }
+
+  .userItems .avatar {
+    width: 90px;
+    height: 50px;
+    padding: 10px 5px;
+  }
+
+  .userItems .avatar img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .userItems .avatar a {
+    font-size: 1.2rem;
+  }
+
+  .userItems .avatar .user span {
+    font-size: 0.4rem;
+  }
+
+  .userItems .avatar .user a {
+    font-size: 0.3rem;
+  }
+}

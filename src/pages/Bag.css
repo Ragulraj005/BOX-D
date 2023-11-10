@@ -1,0 +1,127 @@
+  .shopBagTable {
+    margin-top: 50px;
+    color: #ffffff;
+    border-radius: 20px;
+    background: var(--bgColor);
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+  }
+  .bag h1 {
+    font-family: 'Cinzel';
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  .bag h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel';
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .shopBagTable thead tr {
+    font-size: 1.3rem;
+  }
+
+
+  .shopBagTable thead tr th {
+    background: transparent;
+    color:#ffffff;
+  }
+
+  .itemCount {
+    font-size: 1.3rem;
+  }
+
+  .payment {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    color: #ffffff;
+  }
+
+  .payment a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--bgColor);
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.35);
+  }
+
+
+
+@media (max-width: 767px) {
+  .bag h1 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .bag h2 {
+    font-size: 1rem;
+  }
+
+  .shopBagTable thead tr {
+    font-size: 1.2rem;
+  }
+
+  .itemCount {
+    font-size: 1rem;
+  }
+
+  .payment {
+    font-size: 1rem;
+  }
+
+  .payment a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .shopBagTable {
+    margin-left: -10px;
+    margin-top: 10px;
+    color: #ffffff;
+    border-radius: 20px;
+    background: var(--bgColor);
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+    
+  }
+
+  .bag h2 {
+    font-size: 1.2rem;
+  }
+
+  .shopBagTable thead tr {
+    font-size: 1rem;
+  }
+
+  .payment {
+    font-size: 1rem;
+  }
+
+  .payment a {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.shopBagTable td img {
+  width: 90px;
+  height: 100px;
+  object-fit: cover;
+}

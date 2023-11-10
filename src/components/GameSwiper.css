@@ -1,0 +1,262 @@
+.swiper{
+  width: 90%;
+  padding-bottom: 30px;
+
+}
+
+.swiper-slide {
+  width:550px;
+  height: 350px;
+}
+
+.gameSlider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.gameSlider::after {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background :rgba(0, 0, 0, 0.3);
+  border-radius: 30px !important;
+}
+
+.swiper-slide img{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  backdrop-filter: blur(20px);
+  bottom: 0 !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.gameSlider .content{
+  position: absolute;
+  bottom: 20px;
+  z-index: 1000;
+  width: 60%;
+
+}
+
+.gameSlider .content h2{
+  font-family: Bauhaus 93;
+  font-size: 3rem;
+}
+
+.gameSlider .content p {
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  font-style: none;
+  color: #ffefef;
+  font-size: 0.8rem;
+}
+
+
+.gameSlider .content .buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.gameSlider .content .buttons a {
+  text-decoration: none;
+  color: #ffffff;
+   text-transform: uppercase; 
+}
+
+.gameSlider .content .buttons .orderBtn{
+  padding: 8px 20px;
+  background: var(--second);
+
+}
+
+
+.gameSlider .content .buttons .playBtn {
+  height: 50px;
+  width: 50px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   font-size: 2.5rem;   
+}
+
+
+.playBtn .Play {
+  display: block;
+}
+
+.playBtn .Pause{
+  display: none;
+}
+
+.swiper-slide.swiper-slide-active .playBtn.active .Play  {
+  display: none;
+}
+
+.swiper-slide.swiper-slide-active .playBtn.active .Pause  {
+  display: block;
+}
+
+.swiper-slide .video iframe{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 85%;
+  height: 75%;
+  border-radius: 0 30px 0 30px !important;
+  border: 5px solid transparent;
+  background: var(--second);
+  box-shadow: -5px -5px 15px rgba(255,255,255,0.2),
+  5px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1100;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.5s;
+  transform-origin: top right;
+}
+
+.swiper-slide.swiper-slide-active  .video.active iframe {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+/* Media query for screens with a maximum width of 991px and a minimum width of 767px */
+@media (max-width: 991px)  {
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 100%;
+    height: 370px;
+  }
+
+  .gameSlider {
+    padding: 15px;
+  }
+}
+
+  swiper-slide img {
+    border-radius: 15px !important; /* Reduce border radius for smaller screens */
+  }
+
+
+@media (max-width: 767px) {
+  .swiper {
+    width: 100%; /* Use 100% width for responsive design */
+  }
+
+  .swiper-slide {
+    width: 100%; /* Use 100% width for responsive design */
+    height: 250px; /* Adjust slide height for smaller screens */
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 30px; /* Reduce button size for smaller screens */
+    width: 30px; /* Reduce button size for smaller screens */
+  }
+
+  .gameSlider::after {
+    border-radius: 10px !important; /* Reduce border radius for smaller screens */
+  }
+
+  .swiper-slide img {
+    border-radius: 10px !important; /* Reduce border radius for smaller screens */
+  }
+
+  .gameSlider .content h2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .gameSlider .content p {
+    font-size: 0.6rem; /* Adjust font size for smaller screens */
+  }
+
+  .gameSlider .content .buttons .orderBtn {
+    padding: 4px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .gameSlider .content .buttons .playBtn {
+    height: 30px; /* Reduce button size for smaller screens */
+    width: 30px; /* Reduce button size for smaller screens */
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+@media (max-width: 450px) {
+  .swiper {
+    width: 100%;
+    padding-bottom: 15px; /* Adjust the padding */
+    margin-left: -10px;
+  }
+
+  .swiper-slide {
+    width: 100%; /* Adjust the width */
+    height: 345px; /* Adjust the height */
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    height: 50px; /* Adjust the button size */
+    width: 30px; /* Adjust the button size */
+  }
+
+  .gameSlider .content h2 {
+    font-size: 1.3rem; /* Adjust the font size */
+  }
+
+  .gameSlider .content p {
+    font-size: 0.7rem; /* Adjust the font size */
+  }
+
+  .gameSlider .content .buttons .orderBtn {
+    padding: 5px 15px; /* Adjust the button size */
+  }
+
+  .gameSlider .content .buttons .playBtn {
+    height: 40px; /* Adjust the button size */
+    width: 40px; /* Adjust the button size */
+    font-size: 2rem; /* Adjust the font size */
+  }
+
+  .swiper-slide .video iframe {
+    width: 80%; /* Adjust the iframe size */
+    height: 60%; /* Adjust the iframe size */
+  }
+}
