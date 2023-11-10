@@ -28,18 +28,18 @@ Welcome to the React App with Bootstrap project! This project is built using Rea
 Bootstrap is integrated into this project for styling. To install Bootstrap, run the following command:
 npm install bootstrap
 
-Usage
+## Usage
 1.Start the development server:
    npm start
 2.Open your browser and go to http://localhost:3000.
 
-Folder Structure:
+## Folder Structure:
 
 1.The project structure follows the conventions of a typical React app. Key directories include:
 
 * src: Contains the source code.
 * public: Contains static assets and the HTML file.
-Dependencies
+## Dependencies
    *React
    *Bootstrap
 
@@ -53,8 +53,7 @@ The `Home` component is a key section of our React application responsible for s
 - [Folder Structure](#folder-structure)
 - [Dependencies](#dependencies)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Overview
 
